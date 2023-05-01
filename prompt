@@ -1,0 +1,11 @@
+You will write a code of a simple website resembling Twitter that will be capable of storing, loading and presenting data rom Redis and local SQlite database. The website will incorporate a basic interaction with both databases.
+The description of the functionality:
+Anyone who will load the website will be able to type some text into the prompt in the bottom of the left part of the screen. After the user submits the text, the app will store this text into a Redis database together with the timestamp and number of likes initialized to zero.
+The website will load 5 most recent texts from Redis and update the wall (display these texts ordered by timestamps). Next to each text on the wall, there will be a small 'like' button that anyone will be able to click. By clicking the 'like' button, the number of likes for that particular text will be increased by one.
+There will also be a leaderboard screen, that will display 10 texts that received the highest number of likes order by the number of likes. These texts will also be loaded from Redis.
+Both the main wall and the leaderboard screen will be updated every 1 second.
+Every 60 seconds, the top 10 texts from the leaderboard screen will be stored to local SQlite database.
+The description of the appeareance of the website:
+The website will consist of a single page divided in the middle. The left part will be the main wall and the right part will be the leaderboard screen. The prompt will be oval shape with light blue color with dark blue submit button. The texts in the wall will have light gray background and same font size = 12. The font of each of the 10 most liked texts on the leaderboard screen will, however, be mapped on the number of likes. The number of likes will also be shown next to each text.
+
+Write also the instructions on what else is needed to set up such that I can run and test it locally.
